@@ -406,7 +406,7 @@
     </message>
     <message id="354" name="SET_VELOCITY_LIMITS">
       <wip/>
-      <!-- This message is work-in-progress and it can therefore change. It should NOT be used in stable production environments. -->
+      <!-- This message is work-in-progress and it can therefore change. It should NOT be used in stable production environments.此消息还在进行中，因此可能会更改。它不应该在稳定的生产环境中使用 -->
       <description>Set temporary maximum limits for horizontal speed, vertical speed and yaw rate.
         The consumer must stream the current limits in VELOCITY_LIMITS at 1 Hz or more (when limits are being set).
         The consumer should latch the limits until a new limit is received or the mode is changed.
@@ -427,7 +427,7 @@
     </message>
     <message id="361" name="FIGURE_EIGHT_EXECUTION_STATUS">
       <wip/>
-      <!-- This message is work-in-progress it can therefore change, and should NOT be used in stable production environments -->
+      <!-- This message is work-in-progress it can therefore change, and should NOT be used in stable production environments 此消息是正在进行的，因此可能会更改，不应该在稳定的生产环境中使用-->
       <description>
         Vehicle status report that is sent out while figure eight execution is in progress (see MAV_CMD_DO_FIGURE_EIGHT).
         This may typically send at low rates: of the order of 2Hz.
@@ -510,7 +510,7 @@
       <field type="uint8_t" name="gnss_signal_quality" minValue="0" maxValue="10" invalid="UINT8_MAX">An abstract value representing the quality of incoming GNSS signals, or 255 if not available.</field>
       <field type="uint8_t" name="post_processing_quality" minValue="0" maxValue="10" invalid="UINT8_MAX">An abstract value representing the estimated PPK quality, or 255 if not available.</field>
     </message>
-    <!-- Target info from a sensor on the target -->
+    <!-- Target info from a sensor on the target从目标上的传感器获取目标信息 -->
     <message id="510" name="TARGET_ABSOLUTE">
       <description>Current motion information from sensors on a target</description>
       <field type="uint64_t" name="timestamp" units="us">Timestamp (UNIX epoch time).</field>
@@ -527,7 +527,7 @@
       <field type="float[3]" name="vel_std" units="m/s">Standard deviation of the target's velocity in its body frame</field>
       <field type="float[3]" name="acc_std" units="m/s/s">Standard deviation of the target's acceleration in its body frame</field>
     </message>
-    <!-- Target info measured by MAV's onboard sensors -->
+    <!-- Target info measured by MAV's onboard sensors目标信息由MAV的机载传感器测量 -->
     <message id="511" name="TARGET_RELATIVE">
       <description>The location of a target measured by MAV's onboard sensors. </description>
       <field type="uint64_t" name="timestamp" units="us">Timestamp (UNIX epoch time)</field>
@@ -547,5 +547,10 @@
       <field type="uint8_t" name="sysid_in_control">System ID of GCS MAVLink component in control (0: no GCS in control).</field>
       <field type="uint8_t" name="flags" enum="GCS_CONTROL_STATUS_FLAGS">Control status. For example, whether takeover is allowed, and whether this message instance defines the default controlling GCS for the whole system.</field>
     </message>
+
+
   </messages>
+
+
+
 </mavlink>
