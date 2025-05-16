@@ -1,0 +1,15 @@
+Validating /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/development.xml
+Parsing /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/development.xml
+Validating /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/common.xml
+Parsing /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/common.xml
+Validating /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/standard.xml
+Parsing /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/standard.xml
+Validating /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/minimal.xml
+Parsing /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/message_definitions/v1.0/minimal.xml
+Merged enum MAV_CMD
+Found 242 MAVLink message types in 4 XML files
+Generating C implementation in directory /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/include/mavlink/v2.0/development/development
+Generating C implementation in directory /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/include/mavlink/v2.0/development/common
+Generating C implementation in directory /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/include/mavlink/v2.0/development/standard
+Generating C implementation in directory /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/include/mavlink/v2.0/development/minimal
+Copying fixed headers for protocol 2.0 to /Users/jzpfbm/qgroundcontrol/libs/qgroundcontrol/libs/mavlink/include/mavlink/v2.0/development

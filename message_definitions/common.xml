@@ -1366,6 +1366,7 @@
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
+
       <entry value="176" name="MAV_CMD_DO_SET_MODE" hasLocation="false" isDestination="false">
         <description>Set system mode.</description>
         <param index="1" label="Mode" enum="MAV_MODE">Mode</param>
@@ -6712,6 +6713,23 @@
       <extensions/>
       <field type="uint8_t" name="breach_mitigation" enum="FENCE_MITIGATE">Active action to prevent fence breach</field>
     </message>
+    <message id="170" name="HYDROGEN_BATTERY">
+      <description>Hydrogen battery data from the flight controller.</description>
+      <field type="uint16_t" name="bat_voltage">Battery voltage (mV)</field>
+      <field type="uint16_t" name="servo_current">Servo current (mA)</field>
+      <field type="uint16_t" name="stack_voltage">Stack voltage (mV)</field>
+      <field type="uint16_t" name="servo_voltage">Servo voltage (mV)</field>
+      <field type="uint16_t" name="bat_refuel_current">Battery refuel current (mA)</field>
+      <field type="uint16_t" name="gas_tank_pressure">Gas tank pressure (Pa)</field>
+      <field type="uint16_t" name="pipe_pressure">Pipe pressure (Pa)</field>
+      <field type="int8_t" name="pcb_temp">PCB temperature (C)</field>
+      <field type="int8_t" name="stack_temp">Stack temperature (C)</field>
+      <field type="uint8_t" name="work_status">Work status</field>
+      <field type="uint8_t" name="fault_status">Fault status</field>
+      <field type="uint8_t" name="self_check">Self-check result (0=fail, 1=pass)</field>
+      <field type="uint8_t" name="id">0 or 1</field>
+    </message>
+
     <!-- MESSAGE IDs 180 - 229: Space for custom messages in individual projectname_messages.xml files -->
     <!-- 192 MAG_CAL_REPORT imported from ardupilotmega.xml -->
     <message id="192" name="MAG_CAL_REPORT">
