@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE HYDROGEN_BATTERY PACKING
 
-#define MAVLINK_MSG_ID_HYDROGEN_BATTERY 170
+#define MAVLINK_MSG_ID_HYDROGEN_BATTERY 229
 
 
 typedef struct __mavlink_hydrogen_battery_t {
@@ -22,17 +22,17 @@ typedef struct __mavlink_hydrogen_battery_t {
 
 #define MAVLINK_MSG_ID_HYDROGEN_BATTERY_LEN 20
 #define MAVLINK_MSG_ID_HYDROGEN_BATTERY_MIN_LEN 20
-#define MAVLINK_MSG_ID_170_LEN 20
-#define MAVLINK_MSG_ID_170_MIN_LEN 20
+#define MAVLINK_MSG_ID_229_LEN 20
+#define MAVLINK_MSG_ID_229_MIN_LEN 20
 
 #define MAVLINK_MSG_ID_HYDROGEN_BATTERY_CRC 57
-#define MAVLINK_MSG_ID_170_CRC 57
+#define MAVLINK_MSG_ID_229_CRC 57
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_HYDROGEN_BATTERY { \
-    170, \
+    229, \
     "HYDROGEN_BATTERY", \
     13, \
     {  { "bat_voltage", NULL, MAVLINK_TYPE_UINT16_T, 0, 0, offsetof(mavlink_hydrogen_battery_t, bat_voltage) }, \

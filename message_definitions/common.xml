@@ -6713,7 +6713,7 @@
       <extensions/>
       <field type="uint8_t" name="breach_mitigation" enum="FENCE_MITIGATE">Active action to prevent fence breach</field>
     </message>
-    <message id="170" name="HYDROGEN_BATTERY">
+    <message id="229" name="HYDROGEN_BATTERY">
       <description>Hydrogen battery data from the flight controller.</description>
       <field type="uint16_t" name="bat_voltage">Battery voltage (mV)</field>
       <field type="uint16_t" name="servo_current">Servo current (mA)</field>
