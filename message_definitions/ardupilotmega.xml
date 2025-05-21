@@ -1526,22 +1526,13 @@
       <field type="uint8_t" name="len" units="bytes">Data length.</field>
       <field type="uint8_t[16]" name="data">Raw data.</field>
     </message>
-    <message id="170" name="HYDROGEN_BATTERY">
-      <description>Hydrogen battery data from the flight controller.</description>
-      <field type="uint16_t" name="bat_voltage">Battery voltage (mV)</field>
-      <field type="uint16_t" name="servo_current">Servo current (mA)</field>
-      <field type="uint16_t" name="stack_voltage">Stack voltage (mV)</field>
-      <field type="uint16_t" name="servo_voltage">Servo voltage (mV)</field>
-      <field type="uint16_t" name="bat_refuel_current">Battery refuel current (mA)</field>
-      <field type="uint16_t" name="gas_tank_pressure">Gas tank pressure (Pa)</field>
-      <field type="uint16_t" name="pipe_pressure">Pipe pressure (Pa)</field>
-      <field type="int8_t" name="pcb_temp">PCB temperature (C)</field>
-      <field type="int8_t" name="stack_temp">Stack temperature (C)</field>
-      <field type="uint8_t" name="work_status">Work status</field>
-      <field type="uint8_t" name="fault_status">Fault status</field>
-      <field type="uint8_t" name="self_check">Self-check result (0=fail, 1=pass)</field>
-      <field type="uint8_t" name="id">0 or 1</field>
+    <message id="170" name="DATA32">
+         <description>Data packet, size 32.</description>
+         <field type="uint8_t" name="type">Data type.</field>
+         <field type="uint8_t" name="len" units="bytes">Data length.</field>
+         <field type="uint8_t[32]" name="data">Raw data.</field>
     </message>
+
     <message id="171" name="DATA64">
       <description>Data packet, size 64.</description>
       <field type="uint8_t" name="type">Data type.</field>
@@ -1828,6 +1819,24 @@
       <field type="float" name="rpm1">RPM Sensor1.</field>
       <field type="float" name="rpm2">RPM Sensor2.</field>
     </message>
+
+<message id="229" name="HYDROGEN_BATTERY">
+  <description>Hydrogen battery data from the flight controller.</description>
+  <field type="uint16_t" name="bat_voltage">Battery voltage (mV)</field>
+  <field type="uint16_t" name="servo_current">Servo current (mA)</field>
+  <field type="uint16_t" name="stack_voltage">Stack voltage (mV)</field>
+  <field type="uint16_t" name="servo_voltage">Servo voltage (mV)</field>
+  <field type="uint16_t" name="bat_refuel_current">Battery refuel current (mA)</field>
+  <field type="uint16_t" name="gas_tank_pressure">Gas tank pressure (Pa)</field>
+  <field type="uint16_t" name="pipe_pressure">Pipe pressure (Pa)</field>
+  <field type="int8_t" name="pcb_temp">PCB temperature (C)</field>
+  <field type="int8_t" name="stack_temp">Stack temperature (C)</field>
+  <field type="uint8_t" name="work_status">Work status</field>
+  <field type="uint8_t" name="fault_status">Fault status</field>
+  <field type="uint8_t" name="self_check">Self-check result (0=fail, 1=pass)</field>
+  <field type="uint8_t" name="id">0 or 1</field>
+</message>
+
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
       <description>Read registers for a device.</description>
